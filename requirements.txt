@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+tensorflow
+keras
+pillow
+pandas
+scikit-learn
+openpyxl
+numpy
