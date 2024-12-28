@@ -12,9 +12,9 @@ import os
 app = FastAPI()
 
 # Load model ML
-model_acne = load_model('models/model_mobilenetv2_V5.h5', compile=False)
-model_flek = load_model('models/model_moblenetv2_V2_flek.h5', compile=False)
-model_wrinkle = load_model('models/model_moblenetv2_V2_wrinkle.h5', compile=False)
+model_acne = load_model('Models/model_mobilenetv2_V5.h5', compile=False)
+model_flek = load_model('Models/model_moblenetv2_V2_flek.h5', compile=False)
+model_wrinkle = load_model('Models/model_moblenetv2_V2_wrinkle.h5', compile=False)
 
 # Load data rekomendasi produk
 data_skincare = pd.read_excel('data/Toped_combined_scraper_preprocessed_with_labels.xlsx', engine='openpyxl')

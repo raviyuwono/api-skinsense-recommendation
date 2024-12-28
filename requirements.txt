@@ -7,3 +7,4 @@ pandas
 scikit-learn
 openpyxl
 numpy
+python-multipart
