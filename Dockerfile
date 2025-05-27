@@ -1,7 +1,8 @@
-FROM tiangolo/uvicorn-gunicorn-fastapi:python3.10
+FROM python:3.13-slim
 
 RUN apt update && \
-    apt install -y htop libgl1-mesa-glx libglib2.0-0
+    apt install -y htop libgl1-mesa-glx libglib2.0-0 && \
+    rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt /tmp/requirements.txt
 RUN pip install --no-cache-dir -r /tmp/requirements.txt
@@ -9,8 +10,6 @@ RUN pip install --no-cache-dir -r /tmp/requirements.txt
 COPY . /app
 WORKDIR /app
 
-ENV MODULE_NAME=main
-ENV VARIABLE_NAME=app
-ENV PORT=8001
-
 EXPOSE 8001
+
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8001"]
