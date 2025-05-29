@@ -1,7 +1,9 @@
-version: '3'
+version: "3.8"
 services:
-  api-scan:
+  skin-analysis:
     build: .
-    restart: "always"
     ports:
-      - "8001:8001"
+      - "8000:8000"
+    volumes:
+      - ./models:/app/models
+      - ./data:/app/data

@@ -1,10 +1,11 @@
 fastapi
 uvicorn
-tensorflow-cpu
-keras
-pillow
+python-multipart
 pandas
+numpy
+Pillow
+tensorflow-cpu
 scikit-learn
 openpyxl
-numpy
-python-multipart
+python-jose
+passlib
