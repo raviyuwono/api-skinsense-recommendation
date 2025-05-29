@@ -21,7 +21,7 @@ model_wrinkle = load_model('models/model_moblenetv2_V2_wrinkle.h5', compile=Fals
 skincare_data = pd.read_excel('data/Toped_combined_scraper_preprocessed_with_labels.xlsx', engine='openpyxl')
 
 def preprocess_image_file(image_file: UploadFile, target_size=(224, 224)):
-    """Preprocess uploaded image."""
+    """Preprocess uploaded image"""
     try:
         img = Image.open(io.BytesIO(image_file.file.read()))
         img = img.resize(target_size)
