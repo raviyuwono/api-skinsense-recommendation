@@ -8,12 +8,6 @@ from sklearn.metrics.pairwise import cosine_similarity
 import io
 import os
 
-# Configure TensorFlow to reduce memory usage
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
-os.environ['OMP_NUM_THREADS'] = '1'
-
-# Reduce TensorFlow logging
-logging.getLogger('tensorflow').setLevel(logging.ERROR)
 
 # Inisialisasi aplikasi FastAPI
 app = FastAPI()
