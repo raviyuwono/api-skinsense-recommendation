@@ -3,7 +3,7 @@ services:
   skin-analysis:
     build: .
     ports:
-      - "8000:8000"
+      - "8001:8001"
     volumes:
       - ./models:/app/models
       - ./data:/app/data
