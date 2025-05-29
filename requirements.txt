@@ -1,5 +1,5 @@
-fastapi==0.100.0
-uvicorn==0.22.0
+fastapi==0.79.0
+uvicorn==0.18.3
 python-multipart
 pandas
 numpy
@@ -9,4 +9,4 @@ scikit-learn
 openpyxl
 python-jose
 passlib
-typing_extensions>=4.0.0
+typing-extensions<3.11
