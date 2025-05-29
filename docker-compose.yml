@@ -7,3 +7,9 @@ services:
     volumes:
       - ./models:/app/models
       - ./data:/app/data
+
+volumes:
+  models:
+    external: true
+  data:
+    external: true
