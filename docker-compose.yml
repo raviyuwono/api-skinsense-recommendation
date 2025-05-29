@@ -5,7 +5,7 @@ services:
     ports:
       - "8002:8002"
     volumes:
-      - ./models:/app/models
+      - ./Models:/app/models
       - ./data:/app/data
 
 volumes:
