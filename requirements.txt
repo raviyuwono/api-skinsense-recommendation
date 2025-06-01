@@ -9,4 +9,3 @@ scikit-learn
 openpyxl
 python-jose
 passlib
-typing-extensions<3.11
