@@ -1,13 +1,12 @@
-fastapi==0.79.0
-uvicorn==0.18.3
+fastapi
+uvicorn
 python-multipart
 pandas
 numpy
 Pillow
-tensorflow-cpu==2.6.5
+tensorflow-cpu
 scikit-learn
 openpyxl
 python-jose
 passlib
 typing-extensions<3.11
-# tensorflow-cpu==2.6.5
