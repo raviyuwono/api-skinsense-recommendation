@@ -22,6 +22,7 @@ skincare_data = pd.read_excel('data/Toped_combined_scraper_preprocessed_with_lab
 
 def preprocess_image_file(image_file: UploadFile, target_size=(224, 224)):
     """Preprocess uploaded image"""
+
     try:
         img = Image.open(io.BytesIO(image_file.file.read()))
         img = img.resize(target_size)
@@ -104,3 +105,7 @@ async def analyze_skin(
         "primary_condition": primary_condition,
         "recommendations": recommendations
     }
+
+
+if __name__ == "__main__":
+    uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)
